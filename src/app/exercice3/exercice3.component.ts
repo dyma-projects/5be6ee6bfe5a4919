@@ -16,4 +16,7 @@ export class Exercice3Component implements OnInit {
   ngOnInit() {
   }
 
+ public updateStatut() : void {
+    this.statut = !this.statut;
+  }
 }

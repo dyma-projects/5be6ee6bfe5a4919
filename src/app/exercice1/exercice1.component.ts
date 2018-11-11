@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Exercice1Component implements OnInit {
 
-  constructor() { }
+
+  public count: number = 0;
+  public myStyle: {};
+  constructor() { 
+
+    this.myStyle = {
+      'font-style':  'italic',
+      'font-weight': 'bold',
+      'font-size':   '20px'
+    };
+
+  }
 
   ngOnInit() {
+  }
+
+
+  public updateCount(): void {
+    this.count +=1;
   }
 
 }
