@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Exercice4Component implements OnInit {
 
-  constructor() { }
+  public texts: Array<String>;
+
+  constructor() {
+    this.texts = ["un","deux","trois"];
+   }
 
   ngOnInit() {
   }
